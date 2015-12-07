@@ -9,6 +9,7 @@
     <title>Custom Catan: Home</title>
     <meta charset="UTF-8">
     <link href='public/css/primary.css' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="shortcut icon" href="public/img/favicon.ico">
     <script src="public/js/jquery-1.11.1.js"></script>
@@ -61,7 +62,7 @@
                 // echo "<br>";
               ?> -->
 
-            <input type="radio" id="none" name="adjRes" checked/> No resource constraints
+            <input type="radio" id="none" name="adjRes" checked/> Completely random
             <br>
             <input type="radio" id="dubs" name="adjRes" /> No adjacent resource doubles
             <br>
@@ -72,17 +73,17 @@
 
 
 
-            <input type="submit" value="Generate Standard Board" name="custom" onclick="custom();" class="button">
+            <input type="submit" value="Generate Standard Board" name="custom" onclick="custom();" class="btn btn-warning">
             <br>
             <br><b>OR</b>
             <br>
             <br>
-            <input type="submit" value="Generate Expanded Board" onclick="expanded();" name="big" class="button">
+            <input type="submit" value="Generate Expanded Board" onclick="expanded();" name="big" class="btn btn-warning">
             <br>
         </div>
 
         <br>
-        <button onclick="printable();" class="button">Printable Version</button>
+        <button onclick="printable();" class="btn btn-warning">Printable Version</button>
     </div>
 
     <div class=Layout2_2 id="rightPanel">
